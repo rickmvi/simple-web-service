@@ -1,0 +1,88 @@
+/* Estilo Geral */
+body {
+    font-family: "Segoe UI", Roboto, sans-serif;
+    background: #0d1117;
+    color: #e6edf3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    background: #161b22;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+    width: 400px;
+    text-align: center;
+}
+
+h1 {
+    margin-bottom: 20px;
+    font-size: 1.5rem;
+}
+
+form {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+input[type="text"] {
+    padding: 10px;
+    border-radius: 6px;
+    border: 1px solid #30363d;
+    background: #0d1117;
+    color: #e6edf3;
+    width: 70%;
+    outline: none;
+}
+
+input[type="text"]:focus {
+    border-color: #58a6ff;
+}
+
+button {
+    padding: 10px 16px;
+    background: #238636;
+    border: none;
+    border-radius: 6px;
+    color: white;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background 0.2s ease;
+}
+
+button:hover {
+    background: #2ea043;
+}
+
+.user-info {
+    margin-top: 20px;
+    text-align: left;
+    background: #0d1117;
+    padding: 15px;
+    border-radius: 8px;
+    border: 1px solid #30363d;
+}
+
+.user-info p {
+    margin: 8px 0;
+}
+
+.avatar {
+    display: block;
+    margin: 0 auto 10px;
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+}
+
+.not-found {
+    color: #f85149;
+    margin-top: 15px;
+    font-weight: bold;
+}

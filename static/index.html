@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Busca por Usuário do GitHub</title>
+    <link rel="stylesheet" href="CSS/style.css">
+</head>
+    <body>
+    <div class="container">
+        <h1>Buscar Usuário do GitHub</h1>
+        <form id="search-form">
+            <input type="text" id="username" placeholder="Digite o nome de usuário..." required>
+            <button type="submit">Buscar</button>
+        </form>
+
+        <!-- Aqui você vai preencher com as infos do backend -->
+        <div id="user-info" class="user-info" style="display: none;">
+            <img id="avatar" class="avatar" src="" alt="Avatar do usuário">
+            <p><strong>Nome:</strong> <span id="name"></span></p>
+            <p><strong>Login:</strong> <span id="login"></span></p>
+            <p><strong>Bio:</strong> <span id="bio"></span></p>
+            <p><strong>Repositórios Públicos:</strong> <span id="repos"></span></p>
+            <p><strong>Seguidores:</strong> <span id="followers"></span></p>
+            <p><strong>Seguindo:</strong> <span id="following"></span></p>
+        </div>
+
+        <p id="not-found" class="not-found" style="display: none;">Usuário não encontrado 😢</p>
+    </div>
+    </body>
+    <script src="Js/script.js"></script>
+</html>
