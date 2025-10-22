@@ -8,12 +8,12 @@ import (
 )
 
 func main() {
-	fileServer := http.FileServer(http.Dir("./github/static"))
+	fileServer := http.FileServer(http.Dir("./thecatapi/static"))
 	http.Handle("/", fileServer)
-	http.HandleFunc("/api/user", domain.Handler)
+	http.HandleFunc("/api/cat", domain.HandlerCatApi)
 
 	fmt.Printf("Listening on port 3000\n")
 	if err := http.ListenAndServe(":3000", nil); err != nil {
-		log.Fatalf("ListenAndServe: %v", err)
+		log.Fatal("Server error: ", err)
 	}
 }

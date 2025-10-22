@@ -57,7 +57,8 @@ func Handler(w http.ResponseWriter, r *http.Request) {
 	defer func(Body io.ReadCloser) {
 		err := Body.Close()
 		if err != nil {
-
+			http.Error(w, "error closing response body: "+err.Error(), http.StatusInternalServerError)
+			return
 		}
 	}(resp.Body)
 
