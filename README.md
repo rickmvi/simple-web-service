@@ -1,5 +1,7 @@
 # 🔎 GitHub User Finder - Web Service Simples
 
+![Preview do Projeto](assets/project.png)
+
 Este é um mini projeto de web service construído em Go que expõe uma API para buscar dados de um usuário específico do GitHub e exibe esses resultados em uma interface web simples e estilizada.
 
 ---
