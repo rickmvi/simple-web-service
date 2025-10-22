@@ -3,8 +3,7 @@
 
 name: Go
 
-on
-:
+on:
   push:
     branches: [ "go" ]
   pull_request:
